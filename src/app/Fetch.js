@@ -59,7 +59,6 @@ exports.index = (req, res) => {
         if (a.percent > b.percent) {
           return -1;
         }
-        // a must be equal to b
         return 0;
       });
 
@@ -89,9 +88,5 @@ exports.index = (req, res) => {
       .then(res => res.json())
       .then(json => console.log(json));
       res.json(body);
-    }); //json.results
+    });
 }
-
-
-// Falta Selecionar os 10 primeiro itens do array e enviar via post.
-
