@@ -88,8 +88,6 @@ exports.index = (req, res) => {
     })
       .then(res => res.json())
       .then(json => console.log(json));
-
-      console.log(body);
       res.json(body);
     }); //json.results
 }
